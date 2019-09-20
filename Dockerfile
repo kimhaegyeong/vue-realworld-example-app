@@ -7,10 +7,9 @@ RUN apt-get install -y git
 RUN apt-get install -y yarn
 RUN apt-get install -y npm
 
-CMD ["mkdir git"
-    , "cd git"
-    , "git clone https://github.com/kimhaegyeong/vue-realworld-example-app"
-    , "npm install -g vue-cli"
-    , "cd vue-realworld-example-app"
-    , "npm run dev"
-    ]
+CMD ["mkdir", "git"]
+CMD ["cd", "git"]
+CMD ["git", "clone", "https://github.com/kimhaegyeong/vue-realworld-example-app"]
+CMD ["npm", "install", "-g", "vue-cli"]
+CMD ["cd", "vue-realworld-example-app"]
+CMD ["npm", "run", "dev"]
