@@ -1,4 +1,4 @@
-FROM ubuntu:lastest
+FROM ubuntu:latest
 
 MAINTAINER schema9@gmail.com
 
